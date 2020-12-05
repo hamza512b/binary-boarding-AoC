@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    /* Match Advent Of code style */
+    background: #0f0f23;
+    color: #cccccc;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12pt;
+}
+
+
+body::before, body::after {
+    content: "";
+    position: fixed;
+    display: block;
+    height: 100px;
+    width: 100%;
+    left: 0;
+
+    background-color: #000000;
+    filter: blur(40px);
+    opacity: 0.4;
+}
+
+body::before {
+    top: 0;
+}
+
+body::after {
+    bottom: 0;
+}
+
+
+.airplane {
+    margin: auto;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    max-width: 500px;
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+
+.airplane span {
+    text-align: center;
+    line-height: 19px;
+}
+
+.airplane span.busy {
+    color: #900;
+}
+
+.airplane span.empty {
+    text-shadow: 0px 0px 5px 5px #090;
+    color: #090;
+}
