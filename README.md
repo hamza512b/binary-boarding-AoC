@@ -3,4 +3,4 @@ This repo inclueds a visulization of the solution for Binary Boarding problem fr
 
 **Note:**  if you haven't done the day5 yet, this repo will include a spoiler.
 
-![demo](./screenshot/screenshot.png "demo")
+![demo](./screenshot/video.gif "demo")
